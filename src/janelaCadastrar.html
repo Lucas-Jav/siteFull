@@ -1,0 +1,64 @@
+<div class="sectionFormRegister">
+    <form id="register">
+        <button type="button" id="closeBtn">
+            <img src="../src/assets/closeBtn.png" alt="closeBtn">
+        </button>
+    
+    <header class="headerFormRegister">
+        <h1 class="formTitle">Cadastre-se</h1>
+        <p class="description">É rápido e fácil.</p>
+    </header>
+    <hr>
+
+    <section class="sectionRegister">
+
+        <div class="fullName">
+            <input 
+            type="text" 
+            placeholder="Nome"
+            id="name"
+            class="inputFormRegisterName">
+
+            <input 
+            type="text" 
+            placeholder="Sobrenome"
+            id="sobrename"
+            class="inputFormRegisterName">
+        </div>
+
+        <input 
+        type="email" 
+        placeholder="Email"
+        id="newEmail"
+        class="inputFormRegisterDados">
+
+        <input 
+        type="password" 
+        placeholder="Senha"
+        id="newPassword"
+        class="inputFormRegisterDados">
+
+        <div class="date-gener">
+            <input type="date" id="fullDate">
+            
+            <div class="gener">
+                <div class="generGroup">
+                    <label for="male">Masculino</label>
+                    <input type="radio" name="male" value="man" id="male">
+                </div>
+                <div class="generGroup">
+                    <label for="female">Feminino</label>
+                    <input type="radio" name="female" id="female" value="woman">
+                </div>
+            </div>
+        </div>
+
+        <p class="termosDescricao">Ao clicar em Cadastre-se, você concorda com nossos <a href="">Termos, Política de Privacidade e Política de Cookies</a>. 
+            Você poderá receber notificações por SMS e cancelar isso quando quiser.</p>
+        
+
+        <input type="button" id="btnRegister" value="Cadastre-se" class="btnRegister">
+        
+    </section>
+</form>
+</div>

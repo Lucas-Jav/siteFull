@@ -1,0 +1,307 @@
+@font-face {
+    font-family: 'GROUPE';
+    src: url('../fonts/GroupeMedium-8MXgn.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --bg-color: #001122;
+    --p-color: #d5d2e5;
+    --s-color: #985c84;
+    --t-color: #90949c;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+button,
+a {
+    all: unset;
+}
+
+section.sectionHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/bg-img.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form#form {
+    width: clamp(310px, 90%, 450px);
+    height: 420px;
+    border-radius: 15px;
+    background-color: var(--p-color);
+    border: 1px outset var(--s-color);
+}
+
+header.headerForm {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header.headerForm h1.formTitle {
+    font-size: clamp( 20px, 35px, 50px);
+    font-family: 'GROUPE', sans-serif;
+    color: var(--bg-color);                                    
+}
+
+section.login {
+    height: 100%;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input.inputFormHome {
+    width: 300px;
+    border-radius: 6px;
+    padding: 14px 16px;
+    border: 1px solid var(--t-color);
+    color: var(--bg-color);
+}
+
+
+
+input.inputFormHomeSubmit {
+    width: 300px;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-top: 5px;
+    border: 1px;
+    color: var(--p-color);
+    background-color: #001122dc;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: 900;
+    font-family: 'GROUPE', sans-serif;
+}
+
+input.inputFormHomeSubmit:is(:focus, :hover) {
+background-color: var(--bg-color);
+}
+
+section.login span {
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'GROUPE', sans-serif;
+    color: var(--bg-color);
+}
+
+section.login span:is(:focus, :hover) {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+div.line {
+    background-color: var(--bg-color);
+    width: 300px;
+    height: 1px;
+}
+
+input.InputFormHomeNewAc {
+    width: 200px;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-top: 15px;
+    border: 1px;
+    color: var(--p-color);
+    background-color: #985c84c5;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: 900;
+    font-family: 'GROUPE', sans-serif;
+}
+
+input.InputFormHomeNewAc:is(:focus, :hover),
+input.btnRegister:is(:focus, :hover) {
+    background-color: var(--s-color);
+}
+
+div.sectionFormRegister {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #90949c4d;
+}
+
+form#register{
+    position: relative;
+    width: clamp(310px, 90%, 500px);
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--p-color);
+    border: 1px outset var(--s-color);
+}
+
+#closeBtn {
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 7px;
+}
+
+header.headerFormRegister {
+    padding: 12px;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+header.headerFormRegister h1.formTitle {
+    font-size: clamp( 18px, 25px, 50px);
+    font-family: 'GROUPE', sans-serif;
+    color: var(--bg-color);                                    
+}
+
+header.headerFormRegister p.description {
+    font-size: clamp( 15px, 15px, 15px);
+    font-family: 'GROUPE', sans-serif;
+    color: #001122dc;                                    
+}
+
+section.sectionRegister {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.fullName {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input.inputFormRegisterName {
+    width: 49%;
+    border-radius: 6px;
+    padding: 14px 16px;
+    border: 1px solid var(--t-color);
+    color: var(--bg-color);
+}
+
+
+input.inputFormRegisterDados {
+    width: 100%;
+    border-radius: 6px;
+    padding: 14px 16px;
+    border: 1px solid var(--t-color);
+    color: var(--bg-color);
+}
+
+input.btnRegister {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border: 1px;
+    color: var(--p-color);
+    background-color: #985c84c5;
+    cursor: pointer;
+    transition: 1s;
+    font-weight: 900;
+    font-family: 'GROUPE', sans-serif;
+}
+
+input.inputFormHome::placeholder,
+input.inputFormRegisterName::placeholder,
+input.inputFormRegisterDados::placeholder,
+input[type="date"]{
+    color: var(--t-color);
+}
+
+input.inputFormRegisterName:is(:focus, :hover),
+input.inputFormHome:is(:focus, :hover),
+input.inputFormRegisterDados:is(:focus, :hover),
+input[type="date"]:is(:focus, :hover),
+div.generGroup:is(:focus, :hover) {
+    outline: 1px solid var(--s-color);
+    color: var(--bg-color);
+}
+
+input[type="date"] {
+    width: 100%;
+    border-radius: 6px;
+    text-align: center;
+    border: 1px solid var(--t-color);
+    font-family: 'GROUPE', sans-serif;
+    padding: 10px;
+}
+
+div.date-gener {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+div.gener {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    font-family: 'GROUPE', sans-serif;
+}
+
+div.generGroup {
+    border: 1px solid var(--t-color);
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #fff;
+    border-radius: 6px;
+    color: var(--t-color);
+    accent-color: var(--s-color);
+}
+
+p.termosDescricao {
+    margin-top: 20px;
+    font-size: 13px;
+    color: var(--t-color);
+}
+
+p.termosDescricao a {
+    color: #001122;
+    cursor: pointer;
+}
+
+p.termosDescricao a:is(:focus, :hover) {
+    text-decoration: underline;
+}
+
+@media (max-width: 512px) {
+    div.date-gener {
+        flex-direction: column-reverse;
+    }
+}
+
+
